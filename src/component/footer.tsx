@@ -12,14 +12,14 @@ export default function Footer() {
               modern software.
             </p>
             <div className="flex gap-5">
-              <button className="text-2xl font-bold">Github</button>
-              <button className="text-2xl font-bold">Twitter</button>
-              <button className="text-2xl font-bold">LinkedIn</button>
+              <button className="text-2xl font-bold"><a className="no-underline" href="">Github</a></button>
+              <button className="text-2xl font-bold"><a className="no-underline" href="">Twitter</a></button>
+              <button className="text-2xl font-bold"><a className="no-underline" href="">LinkedIn</a></button>
             </div>
           </div>
           <div className="col-span-2 pl-4">
             <h1 className="text-xl font-bold mb-3">PRODUCT</h1>
-            <ul>
+            <ul className="list-none">
               <li>
                 <a href="">Home</a>
               </li>
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
           <div className="col-span-2">
             <h1 className="text-xl font-bold mb-3">COMPANY</h1>
-            <ul>
+            <ul className="list-none">
               <li>
                 <a href="">About</a>
               </li>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
           <div className="col-span-2">
             <h1 className="text-xl font-bold mb-3">LEGAL</h1>
-            <ul>
+            <ul className="list-none">
               <li>
                 <a href="">Privacy Policy</a>
               </li>
@@ -65,10 +65,10 @@ export default function Footer() {
 
         <div className="flex gap-6">
           <p>
-            <a href="">Privacy</a>
+            <a className="no-underline text-black" href="">Privacy</a>
           </p>
           <p>
-            <a href="">Terms</a>
+            <a className="no-underline text-black" href="">Terms</a>
           </p>
         </div>
       </div>

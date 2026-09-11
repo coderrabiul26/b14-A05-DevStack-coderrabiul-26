@@ -8,23 +8,23 @@ export default function Nav() {
           <img src={logo} alt="" />
         </div>
         <div>
-          <ul className="flex items-center gap-3 text-lg">
+          <ul className="flex items-center gap-3 text-lg list-none">
             <li>
-              <a className="text-pink-400 font-bold" href="">
+              <a className="text-pink-400 font-bold no-underline" href="">
                 Home
               </a>
             </li>
             <li>
-              <a href="">Technologies</a>
+              <a className="no-underline text-black" href="">Technologies</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a className="no-underline text-black" href="">Projects</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a className="no-underline text-black" href="">About</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a className="no-underline text-black" href="">Contact</a>
             </li>
           </ul>
         </div>

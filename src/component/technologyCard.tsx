@@ -1,11 +1,23 @@
 import { FaStar } from "react-icons/fa"
 import type { ITechnologyType } from "../type/technologyType"
+import { useState, type Dispatch, type SetStateAction } from "react"
 
 interface ITechnologyProps{
     technology:ITechnologyType
+    selectedTechnology:ITechnologyType[]
+    setSelectedTechnology:Dispatch<SetStateAction<ITechnologyType[]>>
 }
 
-export default function TechnologyCard({technology}:ITechnologyProps){
+export default function TechnologyCard({technology, selectedTechnology, setSelectedTechnology}:ITechnologyProps){
+
+       const [isSelected, setIsSelected]=useState(false)
+
+
+       const handleIsSelected=()=>{
+            setIsSelected(true)
+            setSelectedTechnology([...selectedTechnology, technology])
+       }
+       
 
     return(
         <div className="flex flex-col border-3 border-gray-200 rounded-3xl p-5">
@@ -24,7 +36,7 @@ export default function TechnologyCard({technology}:ITechnologyProps){
                 <span className="flex gap-2 items-center font-bold"><FaStar className="text-yellow-400 "/>{technology.rating}</span>
 
             </div>
-            <button className="btn btn-neutral rounded-xl">Add to Stock</button>
+            <button onClick={()=>handleIsSelected()} className="btn btn-neutral rounded-xl" disabled={isSelected}>{isSelected? 'Added to Stack': 'Add to Stack'}</button>
             
             
         </div>
