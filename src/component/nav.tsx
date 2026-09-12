@@ -1,13 +1,16 @@
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo-text.png";
+
 
 export default function Nav() {
   return (
     <div className="border-b-gray-200 border-b-2 outline-none sticky top-0 bg-white">
       <div className="flex justify-between items-center py-4 container mx-auto">
+        <div className="md:hidden"><GiHamburgerMenu /></div>
         <div>
           <img src={logo} alt="" />
         </div>
-        <div>
+        <div className="hidden md:block">
           <ul className="flex items-center gap-3 text-lg list-none">
             <li>
               <a className="text-pink-400 font-bold no-underline" href="">

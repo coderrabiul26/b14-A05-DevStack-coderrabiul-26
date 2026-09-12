@@ -19,13 +19,13 @@ export default function Technologies({ dataPromise }: ITechnologiesProps) {
 
   return (
     <div className="container mx-auto">
-        <div>
+        <div className="text-center md:text-left">
             <h1 className="text-3xl font-bold"> Explore the <span className="text-pink-500">Technologies</span></h1>
             <p className="text-lg"> Pick one technology per category to build your ideal stack</p>
         </div>
-        <div className="grid grid-cols-12 mt-5">
-            <div className="col-span-9 mr-5">
-                <div className="grid grid-cols-3 gap-4"> 
+        <div className="grid grid-cols-1 md:grid-cols-12 mt-5">
+            <div className="col-span-9 md:mr-5 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> 
                     {technologies.map((technology) => (<TechnologyCard key={technology.id} technology={technology} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></TechnologyCard>))}
                 </div>
             </div>
@@ -48,11 +48,7 @@ export default function Technologies({ dataPromise }: ITechnologiesProps) {
                         </>
                             
                         )}
-                   
-
                         
-                        
-
                     </div>
                     
                 </div>
