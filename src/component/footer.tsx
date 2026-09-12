@@ -3,7 +3,7 @@ import footerLogo from "../assets/logo-text.png";
 export default function Footer() {
   return (
     <div>
-      <div className="border-b-2 border-b-gray-300 my-20 py-12">
+      <div className="border-b-2 border-b-gray-300 my-5 py-12">
         <div className="grid grid-cols-1 md:grid-cols-9 container mx-auto justify-between">
           <div className="col-span-3 pr-2">
             <img className="mx-auto md:mx-0" src={footerLogo} alt="" />
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center container mx-auto mb-20">
+      <div className="flex justify-around md:justify-between items-center container mx-auto mb-20">
         <div>
           <p>@2026 Dev Stack. All rights reserved.</p>
         </div>
