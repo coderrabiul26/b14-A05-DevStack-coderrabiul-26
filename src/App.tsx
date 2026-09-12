@@ -27,6 +27,7 @@ function App() {
         <Technologies dataPromise={dataPromise()}></Technologies>
       </Suspense>
       <Footer></Footer>
+      
      
 
     </>

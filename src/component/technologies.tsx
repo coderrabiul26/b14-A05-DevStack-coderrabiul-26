@@ -15,6 +15,7 @@ export default function Technologies({ dataPromise }: ITechnologiesProps) {
   const handleRemoveAllSelectedTechnology=()=>{
     setSelectedTechnology([])
   }
+  
 
   return (
     <div className="container mx-auto">
@@ -35,8 +36,22 @@ export default function Technologies({ dataPromise }: ITechnologiesProps) {
                         <span className="text-lg">{selectedTechnology.length} Technology Selected</span>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <YourStackCard selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></YourStackCard>
-                        <button onClick={()=>handleRemoveAllSelectedTechnology()} className="btn btn-outline btn-secondary my-3 font-bold rounded-lg text-lg p-5"> Remove All</button>
+                    {
+                        selectedTechnology.length===0? (
+                            <p className="text-xl border-2 border-gray-300 rounded-lg p-8 text-center">Your stack is empty</p>
+                        ):( 
+                        <>
+                            <YourStackCard selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></YourStackCard> 
+                            
+                             <button onClick={()=>handleRemoveAllSelectedTechnology()} className="btn btn-outline btn-secondary my-3 font-bold 
+                            rounded-lg text-lg p-5"> Remove All</button>
+                        </>
+                            
+                        )}
+                   
+
+                        
+                        
 
                     </div>
                     

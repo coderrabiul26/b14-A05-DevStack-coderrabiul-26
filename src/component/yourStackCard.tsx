@@ -14,6 +14,7 @@ export default function YourStackCard({selectedTechnology, setSelectedTechnology
     const handleRemoveSelectedTechnology=(id:number)=>{
         const remainingTechnology= selectedTechnology.filter((technology)=>technology.id!==id)
         setSelectedTechnology(remainingTechnology)
+        
     }
 
 
