@@ -37,7 +37,7 @@ export default function TechnologyCard({technology, selectedTechnology, setSelec
                 <span className="flex gap-2 items-center font-bold"><FaStar className="text-yellow-400 "/>{technology.rating}</span>
 
             </div>
-            <button onClick={()=>handleIsSelected()} className={`${isSelected? 'btn btn-primary': 'btn btn-neutral'} rounded-xl`} disabled={isSelected} >{isSelected? 'Added to Stack': 'Add to Stack'}</button>
+            <button onClick={()=>handleIsSelected()} className={`${isSelected? 'btn btn-primary': 'btn btn-neutral'} rounded-xl`} disabled={isSelected} >{isSelected? '✓ Added to Stack': 'Add to Stack'}</button>
             
             
         </div>

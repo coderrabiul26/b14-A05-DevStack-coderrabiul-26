@@ -1,32 +1,41 @@
-# React + TypeScript + Vite
+=> DevStack
+Build Your Ideal Development Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+DevStack is a modern and interactive web application that helps developers explore different technologies and build their ideal development stack by selecting technologies from different categories.
 
-Currently, two official plugins are available:
+=> Live link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+(https://b14-a05-devstack-coderrabiul26.netlify.app/)
 
-## React Compiler
+=> Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚛️ React
+📘 TypeScript
+⚡ Vite
+🎨 Tailwind CSS
+🌸 DaisyUI
+⭐ React Icons
 
-## Expanding the Oxlint configuration
+=> Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+🔍 Explore Technologies
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+Browse different development technologies such as Frontend, Backend, Database, Language, Styling, DevOps, and Tools with their descriptions, ratings, and difficulty levels.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+➕ Build Your Own Stack
+
+Select technologies from the available technology cards and create your own personalized development stack.
+
+🗑️ Manage Selected Technologies
+
+Easily remove individual technologies from your stack or use the Remove All button to clear your entire stack at once. demonstrates component-based development, state management, conditional rendering, data fetching, and responsive UI design.
+
+### short answers of React questions
+
+  1. JSX stands for Javascript XML. XML is similar type of HTML except a little disimilarity. JSX lets us write HTML inside JavaScript. React uses JSX because it makes easy to write syntax as HTML
+  2. Props is like a function argument which is passed by the parent component to child component and state is like as variable which is used to store or manage or change data inside a component and can be passed to child component from parent component
+  3. useState is used to declare state in the component and gives a function to update the state. I used useState in different component in this project like in technologies.tsx, technologyCard.tsx
+  4. useEffect hook is used to perform side effects after a component renders like data fetching. I need it because after the component rendered and then to store the data in state
+  5. in .map() method a unique key is required to identify the specific element during interactive activities or to ensure which element to change
+  6. Conditional rendering means react will render different data or anything on basis of a condition. I used conditional rendering in my project in "add to Stack" button, "your stack card"
+  7. I used useState hook then sent the state as props to the child component and received by child component. after that by using callback function like handleSelected to send back the data to the parent

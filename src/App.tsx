@@ -14,6 +14,7 @@ const dataPromise=async():Promise<ITechnologyType[]>=>{
     const data = await res.json()
     return data
   }
+  const technologyDataPromise= dataPromise()
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
       <Nav></Nav>
       <Banner></Banner>
       <Suspense fallback={<h1>Loading...</h1>}>
-        <Technologies dataPromise={dataPromise()}></Technologies>
+        <Technologies dataPromise={technologyDataPromise}></Technologies>
       </Suspense>
       <Footer></Footer>
       

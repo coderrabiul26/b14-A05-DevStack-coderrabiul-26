@@ -1,6 +1,7 @@
 import {type Dispatch, type SetStateAction } from "react"
 import type { ITechnologyType } from "../type/technologyType"
 import { IoMdClose } from "react-icons/io"
+import { toast } from "react-toastify"
 
 interface SelectedTechnologyProps{
     selectedTechnology:ITechnologyType[]
@@ -14,7 +15,7 @@ export default function YourStackCard({selectedTechnology, setSelectedTechnology
     const handleRemoveSelectedTechnology=(id:number)=>{
         const remainingTechnology= selectedTechnology.filter((technology)=>technology.id!==id)
         setSelectedTechnology(remainingTechnology)
-        
+        toast.warning('Technology removed')  
     }
 
 

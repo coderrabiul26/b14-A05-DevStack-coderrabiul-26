@@ -4,17 +4,17 @@ export default function Footer() {
   return (
     <div>
       <div className="border-b-2 border-b-gray-300 my-5 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-9 container mx-auto justify-between">
-          <div className="col-span-3 pr-2">
+        <div className="grid grid-cols-1 md:grid-cols-12 container mx-auto justify-between">
+          <div className="col-span-6 pr-2">
             <img className="mx-auto md:mx-0" src={footerLogo} alt="" />
             <p className="text-lg my-3 text-center md:text-left">
               Curated tools, technologies, and resources for developers building
               modern software.
             </p>
             <div className="flex gap-5 justify-center md:justify-start">
-              <button className="text-2xl font-bold"><a className="no-underline" href="">Github</a></button>
-              <button className="text-2xl font-bold"><a className="no-underline" href="">Twitter</a></button>
-              <button className="text-2xl font-bold"><a className="no-underline" href="">LinkedIn</a></button>
+              <button className="text-lg md:text-2xl font-bold"><a className="no-underline" href="">Github</a></button>
+              <button className="text-lg md:text-2xl font-bold"><a className="no-underline" href="">Twitter</a></button>
+              <button className="text-lg md:text-2xl font-bold"><a className="no-underline" href="">LinkedIn</a></button>
             </div>
           </div>
           <div className=" hidden md:block col-span-2 pl-4">
