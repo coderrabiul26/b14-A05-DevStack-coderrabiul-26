@@ -1,11 +1,17 @@
 => DevStack
-Build Your Ideal Development Stack
+"Build Your Ideal Development Stack"
 
 DevStack is a modern and interactive web application that helps developers explore different technologies and build their ideal development stack by selecting technologies from different categories.
 
-=> Live link
+
+=> Live Website link
 
 (https://b14-a05-devstack-coderrabiul26.netlify.app/)
+
+=> This Repository Link
+
+(https://github.com/coderrabiul26/b14-A05-DevStack-coderrabiul-26.git)
+
 
 => Technologies Used
 
@@ -15,6 +21,7 @@ DevStack is a modern and interactive web application that helps developers explo
 🎨 Tailwind CSS
 🌸 DaisyUI
 ⭐ React Icons
+
 
 => Features
 
@@ -29,6 +36,7 @@ Select technologies from the available technology cards and create your own pers
 🗑️ Manage Selected Technologies
 
 Easily remove individual technologies from your stack or use the Remove All button to clear your entire stack at once. demonstrates component-based development, state management, conditional rendering, data fetching, and responsive UI design.
+
 
 ### short answers of React questions
 
